@@ -1,0 +1,107 @@
+📌------Overview------📌
+
+You will learn how to pass all the Bandit levels on the OverTheWire with that you will able to understand foundations of the SSH.
+
+🧰-----------Requirements-------------🧰
+
+For the windows OP  = any SSH program will work but for recomand you can use Cygwin64 Terminal download from here : https://www.cygwin.com/ 
+
+If you want to use Linux system which I will you can just use the Linux console for The SSH connection. 
+
+📌------------LEVEL BY LEVEL------------📌
+
+LEVEL - 0  - 
+
+  Level Goal is the connecting bandit server. Host : bandit.labs.overthewire.org  Username: bandit0 Pass: bandit0
+
+ Solution :  
+ 
+ -On the console type SSH bandit0@bandit.labs.overthewire.org -p 2220 
+ -then server will ask for pass type the pass which is : bandit0 
+ 
+ Explanation : 
+
+ -First we typed SSH to connect the host than level to connect the right part in this case "bandit0" than we typed host name which is given to us 
+ than we typed -p its represents port number for the host.
+
+ ****************************************************************************************************************************************************
+
+
+
+ LEVEL - 0  >  1 - 
+
+ Level Goal is the finding the password for the next level which is in the readme file. 
+
+ Solution :  
+ 
+ -On the console type ls 
+ -Then type cat readme
+ -Host will give you the password for the next level copy and then  type exit. 
+
+ Explanation : 
+
+ -We were already connected the host thats why we did not need to connect anything we just have to type ls to able to see files but actually 
+ file name was already given to us so we wasnt have to list the files but for the next levels we will need to do it.  after seeing the file name 
+ we typed cat then file name. with cat command we can read the files. 
+
+****************************************************************************************************************************************************
+
+ LEVEL - 1 > 2 - 
+
+  Level Goal is the finding password in file called "-". Host : bandit.labs.overthewire.org  Username: bandit1 Pass: 
+
+ Solution :  
+ -On the console type SSH bandit1@bandit.labs.overthewire.org -p 2220 
+ -then server will ask for pass type the pass which is : ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If(can be different for every session I typed bc able to follow the document correctly.)
+ -If you want to see the all the files type ls -la 
+ -Type cat ./- 
+ -Host will give you the password
+ 
+ Explanation : 
+
+ -The file we need to cat(read) is name with "-" but we can not read like that because of the name "-". this parameter also uses for represent in linux system. 
+ For that we need to define the console this is not a parameter its a file name so we need to type "./". with this code  we defining this is a 
+ File name not parameter.
+ 
+****************************************************************************************************************************************************
+
+ LEVEL - 2 > 3 - 
+
+  Level Goal is the finding password in file called "spaces in this filename"  Host : bandit.labs.overthewire.org  Username: bandit2  
+
+ Solution :  
+ -On the console type SSH bandit2@bandit.labs.overthewire.org -p 2220 
+ -then server will ask for pass type the pass which is : 263JGJPfgU6LtdEvgfWU1XP5yac29mFx(can be different for every session I typed bc able to follow the document correctly.)
+ -If you want to see the all the files type ls -la 
+ -Type cat "spaces in this filename"
+ -Host will give you the password
+ 
+ Explanation : 
+
+ -The file we need to cat(read) is name with "spaces in this filename" but we can not read like that because of the name. For that we need to type with " "  
+ so it console will  understand the file name countains spaces. 
+
+ ****************************************************************************************************************************************************
+
+ LEVEL - 3 > 4 - 
+
+  Level Goal is the finding password in a hidden file  in the inhere directory called Host : bandit.labs.overthewire.org  Username: bandit3  
+
+ Solution :  
+ -On the console type SSH bandit2@bandit.labs.overthewire.org -p 2220 
+ -then server will ask for pass type the pass which is : 263JGJPfgU6LtdEvgfWU1XP5yac29mFx(can be different for every session I typed bc able to follow the document correctly.)
+ -If you want to see the all the files type ls -la 
+ -Type cat "spaces in this filename"
+ -Host will give you the password
+ 
+ Explanation : 
+
+ -The file we need to cat(read) is name with "spaces in this filename" but we can not read like that because of the name. For that we need to type with " "  
+ so it console will  understand the file name countains spaces. 
+ 
+
+ 
+
+
+
+
